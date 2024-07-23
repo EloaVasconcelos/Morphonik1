@@ -1,0 +1,682 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/*programando a nav bar no geral*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /*cor da navbar*/
+    padding: 15px 30px;
+    height: 55px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*especificando a imagem do logo que aparece na navbar*/
+.navbar-logo img {
+    height: 85px;  /*ajustando o tamanho*/
+    width: 85px; /*ajustando o tamanho*/
+    margin-top: 24px; /*margem em relação ao topo*/
+}
+
+/*especificando os links das sessões do site*/
+.navbar-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 550px;
+}
+
+.navbar-links li {
+    margin: 0 20px;
+
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family:"gilroy/Gilroy-RegularItalic"; /*ver como fazer isso*/
+}
+
+.navbar-links a:hover {
+    color: #ddd;
+}
+
+/*para nao deixar um sobre o outro*/
+.navbar-icons {
+    display: flex;
+    margin-right:55px; /*arrumando os ícones na navbar*/
+}
+
+.navbar-icons .icon {
+    margin-left:20px;
+}
+
+.navbar-icons .icon img {
+    height: 45px;
+    width: 45px;
+   
+}
+
+.navbar-fundo1 {
+    margin-top: 55px;
+}
+
+.navbar-fundo1 img {
+    height:1190px; /* Ajustei o valor para um tamanho maior */
+    width: 1519px;  /* Ajustei o valor para um tamanho maior */
+    margin-top:-38px; /*37 fica um uma linha bem pequena (espeçamento)*/
+}
+
+.navbar-fundo1 .logocompleta {
+    position: absolute;
+    top: 55%; /*em relação ao topo*/
+    left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+    transform: translate(-50%, -50%);
+    height:400px; /*definindo o tamanho*/
+    width:800px; /*definindo o tamanho*/
+}
+
+
+/* Seção de Serviços, Nossos Objetivos e Segmentos*/
+
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -350px;
+}
+
+.sobreempresa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Aumenta a largura máxima */
+}
+
+.servico, .objetivo, .segmentos {
+    background-color: white; /*cor de fundo*/
+    border-radius: 0px 0px ; /*borda aredondada - ajustar se for preciso*/
+    box-shadow: 0 80px 70px rgba(0, 0, 0, 0.1);  /*importante*/
+    overflow: hidden; 
+    width: calc(30% - 20px); /* Diminui a largura e o espaçamento em porcentagem */
+    margin: 0 30px 60px; /* Aumenta o espaçamento entre as divs ()*/
+    text-align: center; /*modificando o texto*/
+    position: relative;
+}
+
+.servico img, .objetivo img, .segmentos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0; /* Ajuste para arredondar apenas a parte superior */
+}
+
+.servico h1, .objetivo h1, .segmentos h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Adiciona negrito */
+}
+
+.servico p, .objetivo p, .segmentos p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 0 70px; /* Adiciona padding para o texto (paragrafo */
+}
+
+.linha {
+    width: 100%;
+    height: 4px;
+    background-color: #d9d9d9;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* Começo do Saiba Mais*/
+
+/* Inicia o tópico "Pretende fazer um projeto?" */
+
+.text {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 500px;/*tamanho da imagem de fundo */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 3.5%;
+    box-sizing: border-box;
+    position: relative; /* Adiciona posição relativa para posicionar a imagem de fundo */
+}
+
+
+
+
+.background-image {
+    background-size: cover;
+    position: absolute; /* Posiciona a imagem de fundo absolutamente dentro da div */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+
+
+.text h2 {
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels */
+}
+
+.text p {
+    font-size: 19px;
+    color: #000;
+    margin-bottom: 20px;
+   
+}
+
+.button {
+    background-color:#FF914D; /* Define a cor de fundo do botão */
+    color: #000;
+    border: none; /* Remove qualquer borda padrão do botão */
+    font-weight: bold;
+    padding: 6px 50px;
+    cursor: pointer; /* Define o cursor ao passar sobre o botão */
+    font-size: 24px;
+    text-decoration: none; /* Remove qualquer sublinhado do texto do botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança da cor de fundo */
+    /*
+    height:100px;
+    width:500px;*/
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+/*ÍNICO DO PRINCIPAIS SERVIÇOS*/
+
+.container {
+    width: 100%;
+    height: auto;
+    background-image: url('img/fundo_color.jpg');
+    background-position: center; /* Centraliza a imagem de fundo dentro do contêiner */
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens flexíveis ao início do eixo principal (horizontalmente à esquerda) */
+    align-items: center;
+    padding: 20px 3.5%; /* Define um preenchimento interno de 20px nas direções superior e inferior, e 3.5% nas direções esquerda e direita */
+    box-sizing: border-box; /* Garante que o preenchimento e a borda não alterem as dimensões totais do elemento */
+    flex-direction: column; /* Define a direção dos itens flexíveis como coluna, empilhando-os verticalmente */
+    text-align: left; /* Alinha o texto dentro do contêiner à esquerda */
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha quando não couberem mais na largura */
+}
+
+.service1, .service2 {
+    background: white;
+    border-radius: 5px 5px 0 0; /* Define bordas arredondadas para os cantos superiores (cantos superiores e inferiores */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as dimensões do elemento */
+    width:450px; /*ajustando o tamanho (maiores que os anteriores*/
+    text-align: center;
+    flex-grow: 1; /* Permite que o elemento cresça para ocupar o espaço disponível */
+    margin-right: 70px;
+    margin-bottom: 20px;
+    box-shadow: 0 80px 70px rgba(0, 0, 0, 0.1);  /*importante*/
+}
+
+.service1 p, .service2 p {
+    margin-bottom: 60px;
+    padding: 0 70px; /* Adiciona padding para o texto (paragrafo */
+    font-size: 16px;
+}
+
+.service2 {
+    margin-right: 0;
+}
+
+.service1 img, .service2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service p {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.linha {
+    width: 100%;
+    height: 4px; 
+    background-color: #d9d9d9;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+/* Limita a largura máxima dos elementos com a classe .text para 300 pixels em telas com largura mínima de 500 pixels. */
+@media (min-width: 500px) {
+    .text {
+        max-width: 300px; /* Reduz largura máxima do texto */
+    }
+}
+
+
+/* começando a div sobre a empresa - somente texto*/
+
+.img1 {
+    width:1519px;
+    height: auto;
+    margin-top:-250px;
+}
+ 
+.titulo1 {
+    font-size:88px;
+    font-weight: bold;
+    color: #ff6700;
+    margin-top:-650px;
+    margin-left:150px;
+}
+
+.titulo2 {
+    font-size:28px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 85px;
+    
+}
+
+.Empresa2 {
+    margin-top:-300px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left:58px;
+}
+
+.highlight {
+    color: #ff6700;
+    font-weight: bold;
+}
+
+.p1
+{
+    color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
+    margin-left: 700px;
+    font-size:35px;
+    font-family: gil
+}
+
+.p2 {
+    color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
+    margin-right:150px;
+    text-align: center;       /* Centraliza texto dentro do elemento */
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:800px;
+}
+
+
+/*Parte do carrossel*/
+
+.img2 {
+    width:1519px;
+    height: auto;
+    margin-top:106px; /*exatamente na medida da outra div*/
+}
+
+
+/*Importante - estilizando o carrossel ---------------------------------------------------------------------*/
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+  
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top:-700px;
+    margin-right:900px;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.carousel-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-info h2 {
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.carousel-info p {
+    margin-bottom: 0;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    
+}
+
+.carousel-nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.arrow-left, .arrow-right {
+    width: 70px;
+    height: 70px;
+    background-color: #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*arrumando as setas*/
+.arrow-left img {
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-right img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/*fim do carrossel*/
+
+
+.linha1 {
+    width: 90%;
+    height: 4px;
+    margin-left: 80px;
+    background-color: #d9d9d9;
+    margin-top:-70px;
+    margin-bottom: 20px;
+}
+
+
+/*Parte do forms*/
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.contact-form {
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 70px #ffb7a7;
+    border-radius: 8px;
+    border-color: #000000;
+}
+
+.contact-form h2 {
+    color: #ff7f00;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size:40px;
+}
+
+.contact-form p {
+    color: #000000;
+    margin-bottom: 20px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size:19px;
+    text-align: center;
+    margin-top:-5px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /*border-radius: 5px -- para arredondar a borda se for preciso*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 2px 5px rgba(255, 87, 51, 0.5); /* Sombra específica para o campo Nome */
+    height:80px; /*do mesmo tamanho que os demais elementos*/
+    width:435px; /*alinhado */
+    margin-left:70px; /*alinhado*/
+    border-color: #ffb7a7;
+    background-color: #fff0e6;
+    
+    
+}
+
+
+form input#nome {
+    border-color: #ffb7a7;
+    background-color: #fff0e6;
+    height:20px;
+    width:190px;
+    margin-left:70px;
+}
+
+form input#tel {
+    border-color: #ffb7a7;
+    background-color: #fff0e6;
+    height:20px;
+    width:190px;
+    margin-left:315px;
+    margin-top:-52px;
+    box-shadow: 0 2px 5px rgba(255, 87, 51, 0.5); /* Sombra específica para o campo Nome */
+
+}
+
+form input#email {
+    border-color: #ffb7a7;
+    background-color: #fff0e6;
+    height:20px; /*do mesmo tamanho que os demais elementos*/
+    width:435px; /*alinhado */
+    margin-left:70px; /*alinhado*/
+}
+
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    background-color: #ff7f00; /*se for preciso mudar a cor do botão */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height:40px;
+    width:135px;
+    margin-left:235px;
+    border-color: #ffb7a7;
+
+}
+
+.contact-form button:hover {
+    background-color: #e66f00;
+  
+    box-shadow: 0 0 70px #ffb7a7;
+}
+
+.contact-image {
+    width: 40%;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.contact-image img {
+    width: 80%;
+    background-color: #000000;
+    border-radius:10px;
+    margin-left:70px;
+    margin-top:55px;
+
+}
+
+.back-to-top {
+    text-align: right;
+    margin: 20px;
+}
+
+.back-to-top a {
+    color: #ff7f00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*parte do rodapé*/
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:-400px;
+    color:#ffff; /*cor dos elementos do rodapé*/
+}
+
+.footer-texto {
+    width:37%;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:400px;
+    display: flex;
+    margin-top:-45px;
+}
+
+.footer-icones img {
+    width:60px;
+    margin-top:100px;
+    margin-left:40px;
+}
+
+.copy{
+    margin-top:50px;
+    color:#ffffff;
+    margin-left:465px;
+    font-size:20px;
+    margin-top: 90px;
+}
+
+.img3{
+    width:1519px;
+    height: auto;
+    margin-top:106px; /*exatamente na medida da outra div*/
+}
+
+.linha3 {
+    width: 90%;
+    height:2px;
+    margin-left:15px; /*posiçao da linha do rodapé*/
+    background-color: #f54c03;
+    margin-top:-130px;
+    margin-bottom: 20px;
+}
+
+.sm{
+ font-size:35px;
+ margin-top:-100px;
+ margin-left:-15px;
+ display: flex;
+
+
+}
+
+.text1{
+font-size:20px;
+margin-left:100px;
+display: flex; /*espaço entre os outro elementos*/
+padding-left:15%; /*espaço entre os outro elementos*/
+
+}
+
+.text2{
+    font-size:20px;
+    margin-left:200px;
+    margin-top:-90px;
+    display: flex;
+    padding-left:50%; /*espaço entre os outro elementos*/
+
+}
+
+.text3{
+    font-size:20px;
+    margin-left:300px;
+    margin-top:-90px;
+    display: flex;
+    padding-left:80%; /*espaço entre os outro elementos*/
+
+    
+}
+
